@@ -1,0 +1,32 @@
+.main-layout {
+    display: grid;
+    grid-template-columns: 2fr 1fr; /* 2/3 for LeftColumn, 1/3 for RightColumn */
+    height: 100vh;
+  }
+  
+  .left-column {
+    padding: 2em;
+    border-right: 1px solid #ccc;
+  }
+  
+  .right-column {
+    padding: 2em;
+  }
+  
+  @media (max-width: 768px) {
+    .main-layout {
+      grid-template-columns: 1fr; /* Full width for both columns */
+      grid-template-rows: auto auto; /* Stack rows */
+    }
+  
+    .left-column {
+      order: 2; /* Left column will appear second */
+      border-right: none;
+      border-bottom: 1px solid #ccc;
+    }
+  
+    .right-column {
+      order: 1; /* Right column will appear first */
+    }
+  }
+  

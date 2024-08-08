@@ -1,0 +1,35 @@
+.left-column {
+    padding: 20px;
+  }
+  
+  .tabs {
+    display: flex;
+    margin-bottom: 20px;
+  }
+  
+  .tabs button {
+    flex: 1;
+    padding: 10px;
+    cursor: pointer;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 5px;
+    transition: background-color 0.3s;
+  }
+  
+  .tabs button:hover {
+    background-color: #e0e0e0;
+  }
+  
+  .tabs button:focus {
+    outline: none;
+    background-color: #d0d0d0;
+  }
+  
+  .card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Responsive grid */
+    gap: 3rem;
+  }
+  
